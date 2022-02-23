@@ -1,24 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9H1-mT-ywu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Restaurant-->
+        <scene sceneID="axp-FN-yh1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="RcR-z8-YgR" customClass="CategoryTableViewController" customModule="OrdersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="a6M-Ch-PiS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9Ap-Uc-32j">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ap-Uc-32j" id="vES-gZ-lgG">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="w3X-ei-Kyq" kind="show" id="4J4-St-vjU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RcR-z8-YgR" id="BqA-pX-sBz"/>
+                            <outlet property="delegate" destination="RcR-z8-YgR" id="RKW-HA-XaE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Restaurant" id="uDS-mj-s1m"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLl-dP-rd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-757.97101449275374" y="-803.57142857142856"/>
+        </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="bF8-fb-PWo">
+            <objects>
+                <tableViewController id="w3X-ei-Kyq" customClass="MenuTableViewController" customModule="OrdersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="C38-cy-AnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gSR-5L-Yrt">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gSR-5L-Yrt" id="XSK-Ml-pvI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="0qO-fx-O5E" kind="show" id="gz8-F6-cWb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="w3X-ei-Kyq" id="7U6-4P-qxF"/>
+                            <outlet property="delegate" destination="w3X-ei-Kyq" id="DeO-JT-oTq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Gmb-cz-Z32"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ViT-uy-60n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="-802"/>
+        </scene>
+        <!--Menu Item Detail View Controller-->
+        <scene sceneID="qOZ-3U-7q1">
+            <objects>
+                <viewController id="0qO-fx-O5E" customClass="MenuItemDetailViewController" customModule="OrdersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iI7-kn-RAD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tew-Oc-CyX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fex-8n-6Ab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbq-iP-xV2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="-802"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="sMJ-y4-foY">
+            <objects>
+                <tableViewController id="tLv-6k-dDU" customClass="OrderTableViewController" customModule="OrdersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="naM-Lt-Kgu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Yej-60-BXT">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yej-60-BXT" id="gl0-4x-xEl">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tLv-6k-dDU" id="IDL-WU-amP"/>
+                            <outlet property="delegate" destination="tLv-6k-dDU" id="IJG-tu-Der"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="nF5-Bh-6TW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLA-07-rjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-760.86956521739137" y="-159.375"/>
+        </scene>
+        <!--Your Order-->
+        <scene sceneID="yNM-Vb-hOh">
+            <objects>
+                <navigationController id="eFq-ae-rCO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Your Order" image="bag" catalog="system" id="hfG-La-sOW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ej0-ZR-k5R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tLv-6k-dDU" kind="relationship" relationship="rootViewController" id="Vh0-Wr-qRn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eY-nC-1zd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1650.7246376811595" y="-159.375"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="j7Y-iA-b0S">
+            <objects>
+                <navigationController id="ZNF-wP-ikA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menu" image="menucard" catalog="system" id="SQZ-wu-YuD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="uuM-dk-Maf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RcR-z8-YgR" kind="relationship" relationship="rootViewController" id="i0K-ST-LeS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jF5-sU-OT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1649.2753623188407" y="-803.57142857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="13Q-IY-A1S">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9H1-mT-ywu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uQA-NU-Vgv">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZNF-wP-ikA" kind="relationship" relationship="viewControllers" id="V8I-gs-qjJ"/>
+                        <segue destination="eFq-ae-rCO" kind="relationship" relationship="viewControllers" id="uPB-wp-ho2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lah-Q3-MTQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2560.8695652173915" y="-481.47321428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="menucard" catalog="system" width="107" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

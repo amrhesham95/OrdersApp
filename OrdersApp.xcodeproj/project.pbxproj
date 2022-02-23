@@ -13,6 +13,10 @@
 		EF47B92C27C6B44000765477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF47B92A27C6B44000765477 /* Main.storyboard */; };
 		EF47B92E27C6B44200765477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF47B92D27C6B44200765477 /* Assets.xcassets */; };
 		EF47B93127C6B44200765477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF47B92F27C6B44200765477 /* LaunchScreen.storyboard */; };
+		EF47B93A27C6C14C00765477 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47B93827C6C14C00765477 /* CategoryTableViewController.swift */; };
+		EF47B93D27C6C17400765477 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47B93C27C6C17400765477 /* MenuTableViewController.swift */; };
+		EF47B93F27C6C18000765477 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47B93E27C6C18000765477 /* OrderTableViewController.swift */; };
+		EF47B94127C6C25600765477 /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47B94027C6C25600765477 /* MenuItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EF47B92D27C6B44200765477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF47B93027C6B44200765477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF47B93227C6B44200765477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF47B93827C6C14C00765477 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		EF47B93C27C6C17400765477 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		EF47B93E27C6C18000765477 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		EF47B94027C6C25600765477 /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				EF47B92D27C6B44200765477 /* Assets.xcassets */,
 				EF47B92F27C6B44200765477 /* LaunchScreen.storyboard */,
 				EF47B93227C6B44200765477 /* Info.plist */,
+				EF47B93827C6C14C00765477 /* CategoryTableViewController.swift */,
+				EF47B93C27C6C17400765477 /* MenuTableViewController.swift */,
+				EF47B93E27C6C18000765477 /* OrderTableViewController.swift */,
+				EF47B94027C6C25600765477 /* MenuItemDetailViewController.swift */,
 			);
 			path = OrdersApp;
 			sourceTree = "<group>";
@@ -140,7 +152,11 @@
 			files = (
 				EF47B92927C6B44000765477 /* ViewController.swift in Sources */,
 				EF47B92527C6B44000765477 /* AppDelegate.swift in Sources */,
+				EF47B93D27C6C17400765477 /* MenuTableViewController.swift in Sources */,
+				EF47B94127C6C25600765477 /* MenuItemDetailViewController.swift in Sources */,
 				EF47B92727C6B44000765477 /* SceneDelegate.swift in Sources */,
+				EF47B93F27C6C18000765477 /* OrderTableViewController.swift in Sources */,
+				EF47B93A27C6C14C00765477 /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
